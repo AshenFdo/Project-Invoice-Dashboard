@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { pathToFileURL } from 'url';
 
 const clientSchema = mongoose.Schema(
   {
@@ -15,6 +16,10 @@ const clientSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    phone:{
+      type: String,
+      required: false,
+    }
   },
 
   {
